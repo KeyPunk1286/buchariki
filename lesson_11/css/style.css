@@ -1,0 +1,136 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+	font-family: "Inter", sans-serif;
+	color: #637381;
+	font-size: 16px;
+	background: #E5E5E5;
+}
+
+.wrapper {
+	overflow: hidden;
+	max-height: 100%;
+}
+
+.header {
+	padding: 30px 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header__content {
+	display: flex;
+}
+
+.content__logo {
+	margin-right: 45px;
+}
+
+.categories__item {
+	display: inline-block;
+	position: relative;
+
+}
+
+.categories__item:hover .categories__menu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
+.categories__link {
+	display: inline-block;
+	color: #212B36;
+	line-height: 1.5;
+	font-weight: 600;
+	padding: 9px 20px;
+	background: #F4F7FF;
+	border-radius: 5px;
+
+}
+
+.categories__link::after {
+	content: "";
+	background: url("../img/vector/vector.svg") no-repeat;
+	display: inline-block;
+	width: 10.8px;
+	height: 5.8px;
+	margin-left: 13px;
+	margin-bottom: 3px;
+}
+
+.categories__menu {
+
+	min-width: 180px;
+	background: #FFFFFF;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 22px 24px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 2;
+	margin-top: 40px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+
+	transition: all 0.3s;
+}
+
+.categories__menu li:not(:last-of-type) {
+	margin-bottom: 13px;
+}
+
+.categories__menu::before {
+	content: "";
+	background: url("../img/vector/polygon.svg") no-repeat;
+	display: inline-block;
+	width: 32.38px;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	left: 13px;
+}
+
+.categories__menu::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	top: -40px;
+	left: 0;
+	background: transparent;
+	z-index: -1;
+}
+
+.menu-categories__link {
+	color: #637381;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+.categories__link_after::after {
+	content: "";
+	background: url("../img/vector/vector_2.svg")no-repeat;
+	display: inline-block;
+	width: 15px;
+	height: 10px;
+position: absolute;
+top: 66px;
+left: 151px;
+
+
+}
